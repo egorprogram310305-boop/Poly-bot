@@ -8,7 +8,8 @@ class PolyProTrader:
         self.tg_chat_id = os.getenv("TELEGRAM_CHAT_ID")
         
         # Настройки торговли
-        self.min_anomaly = Decimal("0.05")  # Ищем разницу от 5% (5 центов)
+        self.min_anomaly = Decimal("0.02")
+  # Ищем разницу от 5% (5 центов)
         self.bet_amount = 1.0              # Сумма входа (минималка 1$)
         
         # API Polymarket
